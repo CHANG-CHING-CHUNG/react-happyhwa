@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -10,10 +11,9 @@ function NavBar() {
     </div>
     <div className="container justify-content-around">
       <div className="navbar-nav ">
-        <div  className="home nav-link nav-item active">首頁</div>
-        <div  className="menu nav-link nav-item">美味菜單</div>
-        <div  className="about nav-link nav-item">關於我們</div>
-        <div  className="delivery nav-link nav-item">訂餐外送</div>
+        <Link to="/"  className="home nav-link nav-item active">首頁</Link>
+        <Link to="/menu" className="menu nav-link nav-item">美味菜單</Link>
+        <Link to="/delivery" className="delivery nav-link nav-item">訂餐外送</Link>
       </div>
     </div>
   </nav>
