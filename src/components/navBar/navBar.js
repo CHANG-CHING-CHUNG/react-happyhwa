@@ -11,7 +11,7 @@ function NavBar() {
     </div>
     <div className="container justify-content-around">
       <div className="navbar-nav ">
-        <NavLink to="/" activeClassName="active"  className="home nav-link nav-item">首頁</NavLink>
+        <NavLink exact to="/" activeClassName="active"  className="home nav-link nav-item">首頁</NavLink>
         <NavLink to="/menu"  activeClassName="active" className="menu nav-link nav-item">美味菜單</NavLink>
         <NavLink to="/delivery" activeClassName="active" className="delivery nav-link nav-item">訂餐外送</NavLink>
       </div>
