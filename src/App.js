@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import MobileSideBar from './components/mobileSidebar/mobileSideBar';
 import Header from './components/header/header';
 import NavBar from './components/navBar/navBar';
@@ -8,7 +8,7 @@ import Content from './components/content/content'
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div id="main-content">
         <FbIcon/>
         <MobileSideBar/>
@@ -16,7 +16,7 @@ function App() {
         <NavBar/>
         <Content/>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
