@@ -5,27 +5,50 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.state ={
-      onScroll:false,
-      topFixed:"top-fixed"
+      sideIconClicked:false,
+      topFixed:"top-fixed",
+      NavClass:"navbar navbar-expand-sm ",
+      sideBarClass:"",
+      sidebarStyle:{
+        marginLeft:"0px"
+      }
     }
+    this.nav = React.createRef();
   }
 
   componentDidMount() {
     window.onscroll = () => {
-      this.setState({ onScroll:true });
+      if(window.pageYOffset >= this.state.offsetTop) {
+        this.setState({ NavClass: "navbar navbar-expand-sm top-fixed"})
+
+      } else {
+        this.setState({NavClass: "navbar navbar-expand-sm "});
+      }
+    }
+    window.onload = () => {
+      this.setState({ offsetTop: this.nav.current.offsetTop});
+    }
+    
+  }
+
+  sideBarControl = () => {
+    if(this.state.sideIconClicked) {
+      this.setState({sideIconClicked:false, sideBarClass:""})
+      this.setState({sidebarStyle:{marginLeft:"0px"}})
+      this.props.openSideBar();
+    } else {
+      this.setState({sideIconClicked:true, sideBarClass:"open"});
+      this.setState({sidebarStyle:{marginLeft:"150px"}})
+      this.props.openSideBar();
     }
   }
 
 
 
   render() {
-    let className = "navbar navbar-expand-sm ";
-    if(this.state.onScroll && window.pageYOffset > 319.933) {
-      className += this.state.topFixed;
-    }
     return (
-        <nav id="main-nav" className={className} role="navigation">
-        <div id="nav-icon4" className="">
+      <nav ref={this.nav} id="main-nav" className={this.state.NavClass} role="navigation">
+        <div id="nav-icon4" style={this.state.sidebarStyle} className={this.state.sideBarClass} onClick={this.sideBarControl}>
           <span></span>
           <span></span>
           <span></span>
