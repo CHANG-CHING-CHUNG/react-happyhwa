@@ -249,12 +249,12 @@ footer {
 
 #check-address {
   display: block;
-  color: #acec88;
+  color: #f00;
 }
 
 #invalid {
   display: block;
-  color: #ffea79;
+  color: #0000008f;
 }
 
 .page {

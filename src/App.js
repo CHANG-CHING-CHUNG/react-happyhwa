@@ -11,9 +11,13 @@ class App extends React.Component {
   constructor(prop) {
     super(prop)
     this.state = {
-      sideBarOpen:false
+      sideBarOpen:false,
     }
 
+  }
+
+  componentDidMount() {
+    this.setState({ loaded: true });
   }
 
   openSideBar = () => {
@@ -33,7 +37,9 @@ class App extends React.Component {
     }
 
     return  (
-        <HashRouter>
+        <HashRouter
+        hashType={"slash"}
+        >
           <div id="main-content">
             <FbIcon/>
             <MobileSideBar sideBarStyle={ sideBarStyle }/>
