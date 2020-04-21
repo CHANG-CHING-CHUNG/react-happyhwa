@@ -14,8 +14,8 @@ body {
 }
 
 #logo {
-  max-width:100%;
     height:auto;
+    width:20%;
 }
 
 .title {
@@ -36,7 +36,7 @@ h3 {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: #373737;
+  background-color: #ff902e;
   overflow-x: hidden;
   padding-top: 60px;
   transition:0.5s;
@@ -45,6 +45,14 @@ h3 {
 .sidebar {
   white-space: nowrap;
   color: #ffffff;
+}
+
+.closeSideBar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  color: white;
 }
 
 
@@ -65,8 +73,20 @@ h3 {
   transition: margin-left .5s;
 }
 
+#news {
+  max-width: 500px;
+  margin: 15px auto
+}
+
+#news-header {
+  text-align: center;
+}
+
+#news-wrapper {
+  list-style: none;
+}
 .navbar {
-  background-color: #373737;
+  background-color: #ff902e;
 }
 
 .top-fixed {
@@ -76,12 +96,11 @@ h3 {
 }
 
 .top-fixed + #content-section {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .navbar-nav {
   flex-grow: 1;
-  justify-content: center;
 }
 
 .navbar-nav .nav-link {
@@ -92,6 +111,10 @@ h3 {
 .nav-item.active,  .nav-link:hover{
   color: #1e1d1d;
   background-color: #fbfbfb;
+}
+
+.navBox {
+  display: flex;
 }
 
 a {
@@ -269,6 +292,7 @@ footer {
   height: 1000px;
   width: auto;
   text-align: center;
+  padding: 15px;
 }
 
 
@@ -309,9 +333,13 @@ footer {
   margin: 0;
 }
 
+.closeSideBar {
+  cursor: pointer;
+}
+
 @media screen and (max-width:600px){
   .mobile-sidebar a { font-size: 18px;}
-   .navbar-nav { visibility: hidden;}
+   .navbar-nav { display: none;}
    #map {height: 30%; width: 80%;}
    .card-section {
     border-radius: 12px;
@@ -342,14 +370,24 @@ footer {
  
  @media screen and (max-width:600px){
     .navbar-nav { display: none;}
+    .navBox {
+      display: none;
+    }
     #nav-icon4 { display: block;}
+    #logo {
+      width: 60%;
+      margin-left: 5%;
+    }
   }
 
 
 
 @media screen and (max-height:736px) and (max-width:414px){
   .mobile-sidebar a { font-size: 18px;}
-   .navbar-nav { visibility: hidden;}
+   .navbar-nav { display: none;}
+   .navBox {
+    display: none;
+  }
    body { font-size: 16px;}
    #map {height: 30%; width: 80%;}
    #autoinput {width: auto;}
@@ -382,12 +420,25 @@ footer {
  
  @media screen and (max-height:736px) and (max-width:414px) {
     .navbar-nav { display: none;}
+    .navBox {
+      display: none;
+    }
     #nav-icon4 { display: block;}
+    #logo {
+      width: 60%;
+    }
+    .container {
+      justify-content: flex-start !important;
+    }
+ 
   }
  
  @media screen and (max-height:812px) and (max-width:375px){
   .mobile-sidebar a { font-size: 18px;}
-   .navbar-nav { visibility: hidden;}
+   .navbar-nav { display: none;}
+   .navBox {
+    display: none;
+  }
    body { font-size: 16px;}
    #autoinput {width: auto;}
    .card-section {
@@ -414,11 +465,22 @@ footer {
    .card-p {
      display: none;
    }
+   #logo {
+     width: 60%;
+     margin-left: 5%;
+   }
+
+   .container {
+    justify-content: flex-start !important;
+  }
 
  }
  
  @media screen and (max-height:812px) and (max-width:375px) {
     .navbar-nav { display: none;}
+    .navBox {
+      display: none;
+    }
     #nav-icon4 { display: block;}
  }
 

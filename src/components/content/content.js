@@ -5,9 +5,7 @@ import Home from '../home/home';
 import Delivery from '../delivery/delivery';
 
 class Content extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+ 
   render() {
     
       return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
 import MobileSideBar from './components/mobileSidebar/mobileSideBar';
-import Header from './components/header/header';
 import NavBar from './components/navBar/navBar';
 import FbIcon from './components/fbIcon/fbIcon';
 import Content from './components/content/content';
@@ -20,7 +19,7 @@ class App extends React.Component {
     this.setState({ loaded: true });
   }
 
-  openSideBar = () => {
+  sideBarControl = () => {
     if(this.state.sideBarOpen) {
       this.setState({sideBarOpen: false});
     } else {
@@ -42,9 +41,8 @@ class App extends React.Component {
         >
           <div id="main-content">
             <FbIcon/>
-            <MobileSideBar sideBarStyle={ sideBarStyle }/>
-            <Header/>
-            <NavBar openSideBar={this.openSideBar}/>
+            <MobileSideBar sideBarStyle={ sideBarStyle } sideBarControl={this.sideBarControl}/>
+            <NavBar sideBarControl={this.sideBarControl}/>
             <Content/>
             <Footer/>
           </div>
