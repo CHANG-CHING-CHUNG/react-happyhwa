@@ -74,8 +74,12 @@ h3 {
 }
 
 #news {
-  max-width: 500px;
-  margin: 15px auto
+  max-width: 700px;
+  margin: 15px auto;
+  border: black 5px solid;
+  border-radius: 30px;
+  background-color: #cbddf0;
+
 }
 
 #news-header {
@@ -84,7 +88,14 @@ h3 {
 
 #news-wrapper {
   list-style: none;
+  padding-right: 40px;
 }
+
+.newsText {
+  margin: 0;
+  padding-left: 10px;
+}
+
 .navbar {
   background-color: #ff902e;
 }
@@ -128,7 +139,12 @@ a {
 
 #content-section {
   background-color: #ffffff;
-  height: 1200px;
+  height: auto;
+}
+
+#bannerImg {
+  height: auto;
+  width: 100%;
 }
 
 .fab {
@@ -299,6 +315,7 @@ footer {
 
 
 
+
 .card-section {
   border-radius: 12px;
   border: 4px solid #5b6a77;
@@ -335,6 +352,11 @@ footer {
 
 .closeSideBar {
   cursor: pointer;
+}
+
+.newsLists {
+  display: flex;
+  border-bottom: black 2px solid;
 }
 
 @media screen and (max-width:600px){
