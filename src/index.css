@@ -16,6 +16,8 @@ body {
 #logo {
     height:auto;
     width:20%;
+    border: white 2px solid;
+    border-radius: 10px;
 }
 
 .title {
@@ -74,8 +76,8 @@ h3 {
 }
 
 #news {
-  max-width: 700px;
-  margin: 15px auto;
+  max-width: 50%;
+  margin: 40px auto 50px auto;
   border: black 5px solid;
   border-radius: 30px;
   background-color: #cbddf0;
@@ -98,6 +100,37 @@ h3 {
 
 .navbar {
   background-color: #ff902e;
+}
+
+#signature-dishes {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #eee8df;
+}
+
+#signature-dishes div {
+  width: 20%;
+  display: inline-block;
+  margin-top: 15px;
+  
+}
+
+#signature-dishes span {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+
+.dishes {
+  width:100%;
+  border: white 2px solid;
+  border-radius: 100px;
+  margin-bottom: 10px;
 }
 
 .top-fixed {
@@ -300,8 +333,8 @@ footer {
   display: none;
 }
 
-.home-page {
-  display: block;
+#home-page {
+  background-color: #f77c3382;
 }
 
 .delivery-page {

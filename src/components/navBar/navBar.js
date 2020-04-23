@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/logo/黑皮驊ＬＯＧＯ.svg'
+import logo from '../../images/logo/黑皮驊ＬＯＧＯ1.jpg'
 import { NavLink } from 'react-router-dom';
 
 class NavBar extends React.Component {

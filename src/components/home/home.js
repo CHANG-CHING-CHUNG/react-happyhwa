@@ -1,5 +1,6 @@
 import React from 'react';
-import Banner from '../banner/banner'
+import Banner from '../banner/banner';
+import SignatureDishes from '../signatureDishes/signatureDishes';
 
 function getDates() {
   const get = new Date();
@@ -48,6 +49,7 @@ function Home() {
          <NewsLists/>
        </ul>
       </div>
+       <SignatureDishes/>
     </div>
   );
 }
