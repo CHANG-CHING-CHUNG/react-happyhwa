@@ -420,6 +420,16 @@ footer {
    .card-p {
      display: none;
    }
+   .newsLists {
+    display: list-item;
+   }
+
+   #signature-dishes {
+    display: block;
+    }
+   #signature-dishes div {
+    width: 100%;
+    }
    
  }
  
@@ -433,6 +443,16 @@ footer {
       width: 60%;
       margin-left: 5%;
     }
+    .newsLists {
+      display: list-item;
+     }
+
+     #signature-dishes {
+      display: block;
+      }
+     #signature-dishes div {
+      width: 100%;
+      }
   }
 
 
@@ -471,6 +491,17 @@ footer {
      display: none;
    }
 
+   .newsLists {
+    display: list-item;
+   }
+
+   #signature-dishes {
+    display: block;
+    }
+   #signature-dishes div {
+    width: 100%;
+    }
+
  }
  
  @media screen and (max-height:736px) and (max-width:414px) {
@@ -485,6 +516,17 @@ footer {
     .container {
       justify-content: flex-start !important;
     }
+
+    .newsLists {
+      display: list-item;
+     }
+
+     #signature-dishes {
+      display: block;
+      }
+     #signature-dishes div {
+      width: 100%;
+      }
  
   }
  
@@ -529,6 +571,17 @@ footer {
     justify-content: flex-start !important;
   }
 
+  .newsLists {
+    display: list-item;
+   }
+
+   #signature-dishes {
+    display: block;
+    }
+   #signature-dishes div {
+    width: 100%;
+    }
+
  }
  
  @media screen and (max-height:812px) and (max-width:375px) {
@@ -537,6 +590,17 @@ footer {
       display: none;
     }
     #nav-icon4 { display: block;}
+
+    .newsLists {
+      display: list-item;
+     }
+
+     #signature-dishes {
+      display: block;
+      }
+     #signature-dishes div {
+      width: 100%;
+      }
  }
 
  @media screen and (max-height:1025px) and (max-width:768px) {
@@ -549,4 +613,14 @@ footer {
    .card-p {
      display: none;
    }
+
+   .newsLists {
+    display: list-item;
+   }
+   #signature-dishes {
+    display: block;
+    }
+   #signature-dishes div {
+    width: 100%;
+    }
  }
