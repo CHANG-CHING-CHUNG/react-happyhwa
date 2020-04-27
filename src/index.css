@@ -392,10 +392,35 @@ footer {
   border-bottom: black 2px solid;
 }
 
+#tinyMap {
+  padding: 0 10% 15px 10%;
+}
+
+.map-title {
+  text-align: center;
+}
+
+#embeddedMap {
+  width: 100%;
+  height: 550px;
+}
+
+#tinyMap p {
+  display: inline-block;
+  text-align: initial;
+}
+#tinyMap h2 {
+  margin-top: 15px;
+}
+
+#tinyMapNav {
+  color: rgb(51, 87, 225);
+}
+
 @media screen and (max-width:600px){
   .mobile-sidebar a { font-size: 18px;}
    .navbar-nav { display: none;}
-   #map {height: 30%; width: 80%;}
+   #map {height: 40%; width: 80%;}
    .card-section {
     border-radius: 12px;
     border: 4px solid aliceblue;
@@ -430,6 +455,7 @@ footer {
    #signature-dishes div {
     width: 100%;
     }
+
    
  }
  
@@ -464,7 +490,7 @@ footer {
     display: none;
   }
    body { font-size: 16px;}
-   #map {height: 30%; width: 80%;}
+   #map {height: 40%; width: 80%;}
    #autoinput {width: auto;}
    .card-section {
     border-radius: 12px;
