@@ -42,7 +42,7 @@ function NewsLists() {
 function EmbeddedMap() {
   return (
     <div id="tinyMap">
-      <div class="map-title">
+      <div className="map-title">
         <h2>歡迎來黑皮驊</h2>
         <p>
           302新竹縣竹北市嘉興路150號
@@ -52,7 +52,7 @@ function EmbeddedMap() {
           <NavLink rel="noopener noreferrer" target="_blank" to="/delivery" id="tinyMapNav">外送範圍查詢</NavLink>
         </p>
       </div>
-        <iframe title="location" id="embeddedMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.385719853299!2d121.02454501547736!3d24.816479484074744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346836f95f91baad%3A0x631ee44ee1f5867a!2z6buR55qu6amK6a2v6IKJ6aOvSEFQUFktSFdB!5e0!3m2!1szh-TW!2stw!4v1587995609194!5m2!1szh-TW!2stw"  frameborder="0" style={ { border: "0" } } allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe title="location" id="embeddedMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.385719853299!2d121.02454501547736!3d24.816479484074744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346836f95f91baad%3A0x631ee44ee1f5867a!2z6buR55qu6amK6a2v6IKJ6aOvSEFQUFktSFdB!5e0!3m2!1szh-TW!2stw!4v1587995609194!5m2!1szh-TW!2stw"  frameBorder="0" style={ { border: "0" } } allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
     </div>
   );
 }
