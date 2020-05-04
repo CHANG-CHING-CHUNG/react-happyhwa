@@ -5,6 +5,7 @@ import NavBar from './components/navBar/navBar';
 import FbIcon from './components/fbIcon/fbIcon';
 import Content from './components/content/content';
 import Footer from './components/footer/footer';
+import Login from './components/login/login';
 
 class App extends React.Component {
   constructor(prop) {
@@ -44,6 +45,7 @@ class App extends React.Component {
             <MobileSideBar sideBarStyle={ sideBarStyle } sideBarControl={this.sideBarControl}/>
             <NavBar sideBarControl={this.sideBarControl}/>
             <Content/>
+            <Login/>
             <Footer/>
           </div>
         </HashRouter>

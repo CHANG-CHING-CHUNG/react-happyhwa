@@ -5,6 +5,11 @@ function Menu() {
   return (
     <div id="menu-page">
       <Product/>
+      <Product/>
+      <Product/>
+      <Product/>
+      <Product/>
+      <Product/>
     </div>
   );
 }
