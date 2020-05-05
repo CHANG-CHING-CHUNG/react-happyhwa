@@ -11,6 +11,7 @@ class NavBar extends React.Component {
 
   sideBarOpen = () => {
       this.props.sideBarControl();
+      
   }
 
 

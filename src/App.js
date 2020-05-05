@@ -1,11 +1,10 @@
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter} from 'react-router-dom';
 import MobileSideBar from './components/mobileSidebar/mobileSideBar';
 import NavBar from './components/navBar/navBar';
 import FbIcon from './components/fbIcon/fbIcon';
 import Content from './components/content/content';
 import Footer from './components/footer/footer';
-import Login from './components/login/login';
 
 class App extends React.Component {
   constructor(prop) {
@@ -28,6 +27,8 @@ class App extends React.Component {
     }
     
   }
+
+
   render() {
     let sideBarStyle = { width: "0px" }; 
     if(this.state.sideBarOpen) {
@@ -41,12 +42,11 @@ class App extends React.Component {
         hashType={"slash"}
         >
           <div id="main-content">
-            <FbIcon/>
-            <MobileSideBar sideBarStyle={ sideBarStyle } sideBarControl={this.sideBarControl}/>
-            <NavBar sideBarControl={this.sideBarControl}/>
-            <Content/>
-            <Login/>
-            <Footer/>
+              <FbIcon/>
+              <MobileSideBar sideBarStyle={ sideBarStyle } sideBarControl={this.sideBarControl}/>
+              <NavBar sideBarControl={this.sideBarControl}/>
+              <Content/>
+              <Footer/>
           </div>
         </HashRouter>
       );
