@@ -8,7 +8,7 @@ class Login  extends React.Component {
     return (
       <div id="login-box">
         <div className="navBox">
-            <div className="navbar-nav ">
+            <div className="navbar-nav login-nav">
               <NavLink exact to="/" activeClassName="active"  className="home nav-link nav-item">首頁</NavLink>
               <NavLink to="/menu"  activeClassName="active" className="menu nav-link nav-item">美味菜單</NavLink>
               <NavLink to="/delivery" activeClassName="active" className="delivery nav-link nav-item">訂餐外送</NavLink>

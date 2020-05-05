@@ -292,6 +292,10 @@ footer {
   background-color: #ff902e;
 }
 
+.login-nav {
+  flex-direction: row;
+}
+
 #login-box {
   background: #333;
   position: fixed;
