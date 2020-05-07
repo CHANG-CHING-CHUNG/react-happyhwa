@@ -3,7 +3,6 @@ import {  Route, Switch } from 'react-router-dom';
 import Menu from '../menu/menu';
 import Home from '../home/home';
 import Delivery from '../delivery/delivery';
-import Login from '../login/login';
 
 class Content extends React.Component {
  
@@ -17,9 +16,6 @@ class Content extends React.Component {
             </Route>
             <Route path="/delivery">
               <Delivery/>
-            </Route>
-            <Route path="/login">
-              <Login/>
             </Route>
             <Route path="/">
               <Home/>

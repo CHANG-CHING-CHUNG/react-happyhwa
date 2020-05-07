@@ -15,14 +15,16 @@ class Login  extends React.Component {
             </div>
           </div>
         <div id="login-wrapper">
+        <h2>管理者登入</h2>
+        <i className="fas fa-sign-in-alt fa-5x"></i>
           <form>
+              <i className="fas fa-users fa-2x"></i>
             <div className="form-group">
-              <label htmlFor="username">使用者名稱</label>
-              <input type="text" name="username" id="username"/>
+              <input type="text" placeholder="使用者名稱" name="username" id="username"/>
             </div>
+            <i class="fas fa-unlock fa-2x"></i>
             <div className="form-group">
-              <label htmlFor="password">密碼</label>
-              <input type="text" name="password" id="password"/>
+              <input type="text" placeholder="密碼" name="password" id="password"/>
             </div>
           </form>
           <button className="login-btn">登入</button>

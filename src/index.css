@@ -294,6 +294,9 @@ footer {
 
 .login-nav {
   flex-direction: row;
+  justify-content: end;
+  padding: 10px 20px 10px 10px;
+  margin-right: 100px;
 }
 
 #login-box {
@@ -326,12 +329,14 @@ footer {
   max-width: 400px;
   margin: auto;
   background: #fff;
-  padding: 40px 30px;
+  padding: 20px 30px 40px 30px;
   border-radius: 10px;
 }
 
 #login-wrapper .form-group {
   margin-bottom: 27px;
+  width: 80%;
+  display: inline-block;
 }
 
 #login-wrapper .form-group label {
@@ -349,6 +354,28 @@ footer {
 #login-wrapper .form-group input:focus {
   outline: none;
   border-color: #df91ec;
+}
+
+#login-wrapper i {
+  margin-right: 5px;
+}
+
+#login-wrapper .fa-unlock {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+#login-wrapper .fa-sign-in-alt {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 100px;
+
+}
+
+
+#login-wrapper h2 {
+  max-width: 160px;
+  margin: auto;
 }
 
 #map {
