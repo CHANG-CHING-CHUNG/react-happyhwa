@@ -1,0 +1,31 @@
+#news {
+  background-color: #bb6968;;
+}
+
+
+
+#news .column-2 ul {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ width: 100%;
+ text-align: start;
+ padding: 25px;
+ font-size: 23px;
+ color: #fff;
+}
+#news .column-2 h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+#news .column-2 li {
+  border-bottom: 2px solid #ff9b6a;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}

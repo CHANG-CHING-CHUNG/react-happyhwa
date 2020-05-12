@@ -7,7 +7,7 @@ import './index.css';
 
 ReactDOM.render(
     <App />,
-  document.getElementById('root')
+  document.getElementById('home')
 );
 
 // If you want your app to work offline and load faster, you can change
