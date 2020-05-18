@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "405815933a05c2f6dadd5821e12313ec",
+    "revision": "a4e6c40783fcf53983b21d2f9a9a616a",
     "url": "/react-happyhwa/index.html"
   },
   {
-    "revision": "ac15a78baca196f2b0de",
-    "url": "/react-happyhwa/static/css/main.881aae83.chunk.css"
+    "revision": "c0ee08cf6ab3b52e5dc2",
+    "url": "/react-happyhwa/static/css/main.dcb5fc17.chunk.css"
   },
   {
-    "revision": "215c9749df7ff02dd6d1",
-    "url": "/react-happyhwa/static/js/2.a6dfd2cc.chunk.js"
+    "revision": "72c9105c24ce690bf89e",
+    "url": "/react-happyhwa/static/js/2.a1a6801d.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/react-happyhwa/static/js/2.a6dfd2cc.chunk.js.LICENSE.txt"
+    "revision": "f4aac9c965aa45c554c7c1d1e3f69ce3",
+    "url": "/react-happyhwa/static/js/2.a1a6801d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ac15a78baca196f2b0de",
-    "url": "/react-happyhwa/static/js/main.161644eb.chunk.js"
+    "revision": "c0ee08cf6ab3b52e5dc2",
+    "url": "/react-happyhwa/static/js/main.d4858f43.chunk.js"
   },
   {
     "revision": "7d86bcb0d8afc69ba400",
     "url": "/react-happyhwa/static/js/runtime-main.ff98b501.js"
+  },
+  {
+    "revision": "45f50fbb77de07cdc883bbeb484e6ef2",
+    "url": "/react-happyhwa/static/media/1.45f50fbb.jpg"
+  },
+  {
+    "revision": "641cffc20ec7466c170bdf50c9b0a915",
+    "url": "/react-happyhwa/static/media/EAT.641cffc2.png"
   },
   {
     "revision": "e77200a4562958bfa02b205edf4c4159",
