@@ -1,7 +1,8 @@
 import React from 'react'
 import Icon from '../components/icons/icon';
 import News from '../components/news/news';
-import Menu from '../components/menu/menu'
+import Menu from '../components/menu/menu';
+import Delivery from '../components/delivery/delivery';
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
       <Icon/>
       <News/>
       <Menu/>
+      <Delivery/>
     </main>
   );
 }
